@@ -49,14 +49,25 @@
 //     }
 // })
 
-const form=document.querySelector('.signup-form');
-//const username=document.querySelector('#username');
+// const form=document.querySelector('.signup-form');
+// //const username=document.querySelector('#username');
 
-form.addEventListener('submit',e=>{
-    e.preventDefault();
-    console.log(form.username.value)
+// form.addEventListener('submit',e=>{
+//     e.preventDefault();
+//     console.log(form.username.value)
+// })
+
+// let use="sreevats"
+// let patt=/[a-z]{9,}/;
+// console.log(patt.test(use));
+const arr=[10,20,30,40,23];
+
+let newArr=arr.filter(score=>score>20);
+console.log(newArr);
+
+let newArr2=arr.map(score=>{
+    return score/2;
 })
+console.log(newArr2);
 
-let use="sreevats"
-let patt=/[a-z]{9,}/;
-console.log(patt.test(use));
+console.log(newArr2.sort((a,b)=>a-b));
